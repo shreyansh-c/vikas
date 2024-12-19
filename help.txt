@@ -1,0 +1,40 @@
+API Routes Overview
+
+1. GET /api/colleges
+   - Method: GET
+   - Request Body: N/A
+   - Description: Retrieve all colleges
+
+2. POST /api/colleges
+   - Method: POST
+   - Request Body (JSON):
+     {
+       "CollegeID": 1,
+       "CollegeName": "ABC",
+       "Status": "Active",
+       "CenterID": "C001"
+     }
+   - Description: Create a new college
+
+3. PUT /api/colleges/:id
+   - Method: PUT
+   - Request Body (JSON):
+     {
+       "CollegeName": "XYZ",
+       "Status": "Inactive",
+       "CenterID": "C002"
+     }
+   - Description: Update a college by ID
+
+4. PATCH /api/colleges/:id
+   - Method: PATCH
+   - Request Body (JSON):
+     {
+       "CollegeName": "New Name"
+     }
+   - Description: Partially update a college by ID
+
+5. DELETE /api/colleges/:id
+   - Method: DELETE
+   - Request Body: N/A
+   - Description: Delete a college by ID
